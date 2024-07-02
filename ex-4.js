@@ -82,3 +82,10 @@ let orders = [
 ];
 
 // Start coding here
+let totalSales = 0;
+
+for (let order of orders) {
+    totalSales += order.productPrice * order.productQuantity;
+}
+
+console.log(`Total-order-prices : ${totalSales} Bath`);
